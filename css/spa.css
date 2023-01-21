@@ -1,0 +1,524 @@
+*{
+	box-sizing: border-box;
+   font-family: var(--second-font);
+}
+
+
+body, ul, p, h2, h1, h2, h4, h3, h5 {
+	margin: 0px;
+	padding: 0px;
+}
+
+::-webkit-scrollbar{
+   width: 15px;
+}
+
+::-webkit-scrollbar-track{
+   background-color: #222;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+   border-radius: 10px;
+   height: 100px;
+}
+
+img{
+	max-width: 100%;
+
+}
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+ 
+[class*='col-']{
+  padding: 15px;
+}
+
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.col-1{
+   width: 8.33%;
+}
+.col-2{
+   width: 16.66%;
+}
+
+.col-20{
+    width: 20%
+}
+
+.col-3{
+   width: 25%;
+}
+.col-4{
+   width: 33.33%;
+}
+.col-5{
+   width: 41.33%;
+}
+.col-6{
+   width: 50%;
+}
+.col-7{
+   width: 58.33%;
+}
+.col-8{
+   width: 66.66%;
+}
+.col-9{
+   width: 75%;
+}
+.col-10{
+   width: 83.33%;
+}
+.col-11{
+   width: 91.66%;
+}
+.col-12{
+   width: 100%;
+}
+
+:root{
+    --main-font: 'Gilda Display', serif;
+    --second-font: 'Barlow Condensed', sans-serif; 
+    --main-color: #aa8453;
+    --second-color: #666;
+}
+
+.header_parent{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.scroll_up{
+   position: fixed;
+   width: 50px;
+   height: 50px;
+   background-color: transparent;
+   color: var(--main-color);
+   border: 1px solid var(--main-color);
+   text-align: center;
+   line-height: 50px;
+   border-radius: 50%;
+   bottom: 40px;
+   right: 40px;
+   font-size: 20px;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.scroll_up:hover{
+   color: white;
+   background-color: var(--main-color);
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+
+.header_logo img{
+   width: 55%;
+}
+
+.stars i{
+    color: rgb(228, 168, 83);
+    font-size: 12px;
+    margin-bottom: 20px;
+ }
+
+.main_header_section{
+   padding: 35px;
+   width: 100%;
+   z-index: 1;
+   top: 0;
+   position: fixed;
+}
+
+nav li{
+   display: inline-block;
+}
+
+nav a{
+   color: white;
+   margin-left: 35px;
+   font-size: 18px;
+   font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.navbar-brand img{
+    width: 45%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-family: var(--second-font);
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+ 
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--main-color);
+    font-family: var(--second-font);
+    font-size: 18px;
+}
+
+.stars i{
+    color: rgb(228, 168, 83);
+    font-size: 12px;
+    margin-bottom: 20px;
+ }
+
+.spa_backgrond{
+    background: rgba(0, 0, 0, 0.3) url('https://duruthemes.com/demo/html/cappa/demo1/img/spa/3.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.spa_describsion{
+    padding: 100px;
+}
+
+.spa_wellness small{
+    font-size: 18px;
+    letter-spacing: 5px;
+    display: block;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.spa_wellness h2{
+    font-size:40px;
+    font-family: var(--main-font);
+    margin-bottom: 15px;
+
+}
+
+.spa_wellness p{
+    font-size: 18px;
+    color: #222;
+}
+
+.reservation{
+    display: flex;
+    align-items: center;
+ }
+ 
+ .reserv_text{
+    margin-left: 20px;
+ }
+ 
+ .reserv_text small{
+    display: block;
+ }
+ 
+ .reserv_icon i{
+    color: var(--main-color);
+    font-size: 35px;
+ }
+ 
+ .reserv_text p{
+    font-size: 18px;
+    color: #666;
+ }
+ 
+ .reserv_text a{
+    color: var(--main-color);
+    font-size: 25px;
+ }
+
+ .reservation{
+    margin-top: 35px;
+ }
+
+ .img_cards_flex_parent{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .img_cards_images{
+    width: 50%;
+    overflow: hidden;
+ }
+ 
+ .img_cards_images img{
+    transition: 0.8s;
+ }
+ 
+ .img_cards_images img:hover{
+    transform: scale(1.1);
+ }
+ 
+ .img_cards{
+    padding: 100px;
+ }
+ 
+ .img_cards_cards{
+    width: 50%;
+    background-color: rgb(248, 245, 240);
+    padding: 30px;
+    vertical-align: middle;
+ }
+ 
+ .img_cards_cards a{
+    transition: 0.5s;
+ }
+ 
+ .img_cards_cards a:hover{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    text-decoration: none;
+ }
+ 
+ .img_cards_cards small{
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #666;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 50px;
+ }
+ 
+ .img_cards_cards h2{
+    font-size: 35px;
+    font-family: var(--main-font);
+    margin-bottom: 15px;
+    font-weight: 500;
+ }
+ 
+ .img_cards_cards p{
+    color: var(--second-color);
+    font-size: 18px;
+    line-height: 30px;
+ }
+ 
+ .img_cards_cards a{
+    background-color: var(--main-color);
+    padding: 13px 30px;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+ }
+
+ .img_cards_cards h6{
+    margin-top: 15px;
+    color: #222;
+ }
+
+ .what_clients_say_section{
+    padding: 100px;
+    background: rgba(0, 0, 0, 0.3) url('https://duruthemes.com/demo/html/cappa/demo1/img/spa/4.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+ }
+ 
+ .comments_title{
+    color: white;
+    text-align: left;
+ }
+ 
+ .comments_title small{
+    font-family: var(--second-font);
+    display: inline-block;
+    margin-bottom: 10px;
+ }
+ 
+ .comments_title h2{
+    font-family: var(--main-font);
+    margin-bottom: 10px;
+ }
+ 
+ .comments_title p{
+    font-family: var(--second-font);
+ }
+ 
+ .author_img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 15px;
+ }
+ 
+ .author_img_info{
+    display: flex;
+    align-items: center;
+ }
+ .comments_info i{
+    font-size: 10px;
+    color: rgb(228, 168, 83);
+ }
+ 
+ .comments_info{
+    margin-left: 15px;
+    margin-top: 15px;
+ }
+ 
+ .comments_title{
+    margin: 0 auto;
+    width: 50%;
+ }
+ 
+ .hover_dots{
+    transform: translateX(300px);
+    margin-top: 30px;
+ }
+ 
+ .hover_dots i{
+    color: var(--main-color);
+    font-size: 13px;
+    margin-left: 5px;
+ }
+
+ .footer_section{
+    padding: 50px;
+    background-color: rgb(34, 34, 34);
+ }
+ 
+ .footer_about_hotel h2{
+    color: white;
+    margin-bottom: 15px;
+    font-family: var(--main-font);
+    font-size: 25px;
+ }
+ 
+ .footer_about_hotel p{
+    color: #adadad;
+    font-size: 18px;
+    margin-bottom: 30px;
+ }
+ 
+ .language_selector_text h5{
+    color: #adadad;
+ }
+ 
+ .language_selector{
+    background-color: rgb(40, 40, 40);
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+ .language_selector_icon i{
+    color: #adadad;
+ }
+ 
+ .footer_explore h2{
+    color: white;
+    margin-bottom: 15px;
+    font-family: var(--main-font);
+ }
+ 
+ .footer_explore a{
+    color: #adadad;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.5s;
+ }
+ 
+ .footer_explore{
+    width: 50%;
+    margin: 0 auto;
+ }
+ 
+ .footer_explore a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+ }
+ 
+ .footer_contact h2{
+    color: white;
+    margin-bottom: 15px;
+    font-family: var(--main-font);
+ }
+
+ .footer_contact p{
+    color: #adadad;
+    font-size: 18px;
+    margin-bottom: 15px;
+ }
+
+ .footer_contact h4{
+    color: white;
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+ }
+ 
+ .footer_contact a{
+    color: white;
+    border-bottom: 1px solid var(--main-color);
+    font-size: 18px;
+ }
+ 
+ .footer_social i{
+    margin-top: 15px;
+    color: #adadad;
+    padding: 10px;
+ }
+ 
+ .copywright_section{
+    padding: 15px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-family: var(--second-font);
+ }
+ 
+ .copywright_section span{
+    color: #adadad;
+ }
+ 
+ .navbar-brand img{
+    width: 45%;
+ }
+
+ @media screen and (max-width: 768px) {
+
+   .comments_title{
+      margin: 0 auto;
+      width: 70%;
+   }
+
+   .news_bottom_section{
+      bottom: -20px;
+      left: 27px;
+   }
+
+   .img_cards_images{
+      width: 100%;
+   }
+
+   .img_cards_cards{
+      width: 100%;
+      order: 2;
+   }
+
+   .footer_explore{
+      width: 100%;
+   }
+}
