@@ -497,6 +497,23 @@ nav a{
     width: 45%;
  }
 
+ .footer_contact a:hover{
+    text-decoration: none;
+    color: var(--main-color);
+ }
+ 
+ .footer_contact a{
+    transition: 0.3s;
+ }
+ 
+ .footer_social i{
+    transition: 0.3s;
+ }
+ 
+ .footer_social i:hover{
+    color: var(--main-color);
+ }
+
  @media screen and (max-width: 768px) {
 
    .comments_title{
